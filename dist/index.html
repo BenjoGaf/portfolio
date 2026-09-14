@@ -20,6 +20,7 @@
 .projects-bg{background:var(--ink);color:var(--white);border-radius:24px;padding:64px 32px;margin:0 16px}@media(min-width:768px){.projects-bg{padding:100px 64px;margin:0 32px}}.projects-bg .section-label{color:var(--muted-light)}.projects-bg h2{color:var(--white)}.projects-header{display:flex;flex-direction:column;gap:16px;margin-bottom:64px}@media(min-width:768px){.projects-header{flex-direction:row;justify-content:space-between;align-items:flex-end}}.section-note{font-size:15px;color:var(--muted-light);font-weight:500;padding-bottom:8px}
 
 .project-grid{display:grid;grid-template-columns:1fr;gap:24px}@media(min-width:768px){.project-grid{grid-template-columns:repeat(3,1fr);gap:32px}}.project{background:var(--ink-light);border:1px solid var(--line-dark);border-radius:16px;padding:32px;position:relative;transition:transform .3s,border-color .3s;display:flex;flex-direction:column;height:100%}.project:hover{transform:translateY(-4px);border-color:var(--lime)}.project-number{font-family:Manrope,sans-serif;font-size:32px;font-weight:800;color:var(--line-dark);position:absolute;top:24px;right:24px;line-height:1}.project-art{height:160px;display:flex;align-items:center;justify-content:center;margin:0 -32px 32px;border-bottom:1px solid var(--line-dark);background:rgba(255,255,255,0.02);font-family:monospace;font-size:64px;color:var(--lime);opacity:0.7}.draft-label{font-size:11px;font-weight:700;letter-spacing:.1em;color:var(--muted-light);background:var(--ink);padding:4px 10px;border-radius:4px;display:inline-block;margin-bottom:16px}.project h3{font-size:24px;color:var(--white);margin-bottom:12px}.project p{font-size:15px;color:var(--muted-light);line-height:1.6;margin-bottom:0;flex-grow:1}
+.infoextractor-art{gap:18px;font-size:42px}.infoextractor-art span:nth-child(2){font-size:28px;color:var(--muted-light)}.project-links{display:flex;gap:16px;margin-top:22px;font-size:13px;font-weight:700;color:var(--lime)}.project-links a:hover{color:var(--white)}
 
 .career{display:grid;grid-template-columns:1fr;gap:48px}@media(min-width:900px){.career{grid-template-columns:1fr 1.5fr;gap:80px}}.timeline{position:relative}.timeline::before{content:'';position:absolute;top:0;bottom:0;left:11px;width:2px;background:var(--line)}@media(min-width:600px){.timeline::before{left:140px}}.timeline-label{font-size:14px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--ink);margin:32px 0 24px;padding-left:40px;position:relative}@media(min-width:600px){.timeline-label{padding-left:170px}}.timeline-label:first-child{margin-top:0}.timeline-label::before{content:'';position:absolute;left:7px;top:50%;transform:translateY(-50%);width:10px;height:10px;background:var(--lime);border-radius:50%}@media(min-width:600px){.timeline-label::before{left:136px}}.timeline-item{display:flex;flex-direction:column;gap:8px;padding-left:40px;margin-bottom:32px;position:relative}@media(min-width:600px){.timeline-item{flex-direction:row;gap:32px;padding-left:0}}.timeline-item::after{content:'';position:absolute;left:9px;top:6px;width:6px;height:6px;background:var(--muted);border-radius:50%;border:2px solid var(--paper)}@media(min-width:600px){.timeline-item::after{left:138px}}.date{font-size:14px;font-weight:600;color:var(--muted);min-width:140px;padding-top:2px}.timeline-item h3{font-size:18px;font-weight:700;color:var(--ink);margin-bottom:4px}.timeline-item p{font-size:15px;color:var(--muted)}
 
@@ -118,11 +119,12 @@ footer{display:flex;flex-direction:column;align-items:center;gap:16px;padding:32
     <div class="project-grid" id="project-list">
       <article class="project">
         <span class="project-number">01</span>
-        <div class="project-art" aria-hidden="true">&lt;/&gt;</div>
+        <div class="project-art infoextractor-art" aria-hidden="true"><span>⌕</span><span>→</span><span>▤</span></div>
         <div>
-          <span class="draft-label">PROJEKTDETAILS FOLGEN</span>
-          <h3>Projekt 01</h3>
-          <p>Beschreibung, Technologien und Projektlink werden ergänzt.</p>
+          <span class="draft-label">LOKAL · OLLAMA</span>
+          <h3>InfoExtractor</h3>
+          <p>Lokale Dokumentensuche für PDF-, DOCX- und TXT-Dateien mit quellengebundenen Antworten und Fundstellen.</p>
+          <div class="project-links"><a href="https://github.com/BenjoGaf/InfoExtractor" target="_blank" rel="noopener">GitHub ↗</a><a href="assets/infoextractor/infoextractor-demo.mp4">Demo ansehen ↗</a></div>
         </div>
       </article>
       <article class="project">
