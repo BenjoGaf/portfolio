@@ -27,7 +27,7 @@ Ein neues Pages-Projekt anlegen, GitHub verbinden und dieses Repository auswähl
 | --- | --- |
 | Produktionsbranch | `main` |
 | Framework | None |
-| Build-Befehl | leer lassen |
+| Build-Befehl | `exit 0` |
 | Build-Ausgabeverzeichnis | `dist` |
 
 Änderungen an `main` können damit automatisch veröffentlicht werden.
