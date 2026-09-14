@@ -1,23 +1,209 @@
-<!doctype html>
-<html lang="de">
+<!DOCTYPE html><html lang="de">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Benjamin Gangol — Softwareentwicklung</title>
 <meta name="description" content="Benjamin Gangol – Informatikstudent an der TU Wien mit Begeisterung für Webentwicklung, Software und Elektronik.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23101923'/%3E%3Ctext x='9' y='43' font-family='Arial' font-weight='bold' font-size='30' fill='%23c0f16b'%3EBG%3C/text%3E%3C/svg%3E">
-<link rel="stylesheet" href="style.css">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+:root{--ink:#15212c;--ink-light:#1e2d3b;--muted:#596672;--muted-light:#8b99a6;--line:#dbe1e4;--line-dark:#2a3b4c;--lime:#bff16b;--lime-dark:#a3da49;--paper:#f9faf8;--white:#ffffff}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:30px}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.7 'DM Sans',sans-serif;overflow-x:hidden}a{color:inherit;text-decoration:none}a:focus-visible{outline:3px solid #537d1b;outline-offset:7px}.wrap{width:min(1200px,calc(100% - 48px));margin:auto}@media(min-width:768px){.wrap{width:min(1200px,calc(100% - 96px))}}.nav{display:flex;align-items:center;justify-content:space-between;min-height:96px;padding:24px 0}.brand{font-family:Manrope,sans-serif;font-size:22px;font-weight:800;white-space:nowrap;letter-spacing:-.03em}.brand-dot{color:var(--lime);font-size:28px}nav{display:flex;gap:32px;align-items:center;font-size:14px;font-weight:600}nav a:not(.nav-contact){transition:color .2s}nav a:hover:not(.nav-contact){color:#598226}.nav-contact{background:var(--ink);color:var(--white);padding:10px 20px;border-radius:8px;transition:background .2s,transform .2s;display:inline-flex;align-items:center;gap:8px}.nav-contact:hover{background:var(--ink-light);transform:translateY(-2px)}.nav-contact span{font-size:12px;opacity:0.8}
+
+.hero-wrapper{padding:0 16px 40px}@media(min-width:768px){.hero-wrapper{padding:0 32px 64px}}.hero-inset{background:var(--ink);color:var(--white);border-radius:24px;padding:64px 32px;position:relative;overflow:hidden}@media(min-width:1024px){.hero-inset{padding:100px 64px}}.hero-grid-bg{position:absolute;inset:0;background-image:linear-gradient(var(--line-dark) 1px,transparent 1px),linear-gradient(90deg,var(--line-dark) 1px,transparent 1px);background-size:40px 40px;opacity:0.2;z-index:0;pointer-events:none}.hero-content{position:relative;z-index:1;display:grid;grid-template-columns:1fr;gap:48px;max-width:1200px;margin:auto}@media(min-width:900px){.hero-content{grid-template-columns:1.4fr 1fr;gap:80px;align-items:center}}.eyebrow{font-size:13px;font-weight:700;letter-spacing:.15em;color:var(--lime);margin-bottom:24px;text-transform:uppercase}h1,h2,h3,p{margin:0}h1,h2,h3{font-family:Manrope,sans-serif}h1{font-size:clamp(42px,5vw,72px);font-weight:800;line-height:1.1;letter-spacing:-.04em}h1 span{color:var(--muted-light)}.intro{max-width:540px;font-size:18px;line-height:1.6;margin-top:32px;color:#cbd5e1}.hero-actions{display:flex;flex-wrap:wrap;gap:20px;align-items:center;margin-top:40px;font-size:15px;font-weight:600}.button{display:inline-flex;align-items:center;gap:12px;background:var(--lime);color:var(--ink);padding:14px 24px;border-radius:8px;transition:background .2s,transform .2s}.button:hover{background:var(--lime-dark);transform:translateY(-2px)}.text-link-white{color:var(--white);text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:6px;transition:color .2s}.text-link-white:hover{color:var(--lime)}.hero-meta{display:flex;flex-wrap:wrap;gap:16px 24px;color:var(--muted-light);font-size:13px;margin-top:48px}.hero-meta span{display:flex;align-items:center;gap:8px}.hero-meta span+span::before{content:'';display:block;width:4px;height:4px;background:var(--muted-light);border-radius:50%;margin-right:16px}
+
+.portrait-card{background:var(--ink-light);padding:24px;border-radius:16px;box-shadow:0 20px 40px rgba(0,0,0,0.2);position:relative;transform:rotate(2deg);transition:transform .3s}.portrait-card:hover{transform:rotate(0deg)}.portrait-img{width:100%;max-width:240px;aspect-ratio:1;object-fit:cover;border-radius:12px;margin:0 auto 20px;display:block;background:var(--ink);border:1px solid var(--line-dark)}.portrait-details{text-align:center}.card-name{font-family:Manrope,sans-serif;font-weight:700;font-size:22px;color:var(--white)}.card-role{color:var(--lime);font-size:14px;font-weight:600;margin-top:4px}.card-tags{display:flex;justify-content:center;flex-wrap:wrap;gap:8px;margin-top:20px;padding-top:20px;border-top:1px solid var(--line-dark)}.card-tags span{font-size:11px;font-weight:700;letter-spacing:.05em;color:#cbd5e1;background:rgba(255,255,255,0.05);padding:4px 10px;border-radius:100px}
+
+.section{padding:80px 0}@media(min-width:768px){.section{padding:120px 0}}.section-header{margin-bottom:56px}.section-label{font-size:14px;font-weight:700;letter-spacing:.12em;color:var(--muted);margin-bottom:16px;display:flex;align-items:center;gap:12px}.section-label::before{content:'';display:block;width:32px;height:2px;background:var(--lime)}h2{font-size:clamp(32px,4vw,48px);line-height:1.2;letter-spacing:-.03em;font-weight:800;color:var(--ink)}
+
+.profile{display:grid;grid-template-columns:1fr;gap:48px}@media(min-width:900px){.profile{grid-template-columns:1fr 1.2fr;gap:80px}}.profile p{font-size:17px;color:var(--muted);margin-bottom:24px}.skills-container{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:32px}.skills-title{font-size:15px;font-weight:700;margin-bottom:20px;color:var(--ink)}.skills{display:flex;flex-wrap:wrap;gap:12px}.skills span{background:var(--paper);border:1px solid var(--line);padding:8px 16px;border-radius:8px;font-size:14px;font-weight:600;color:var(--ink);transition:border-color .2s}.skills span:hover{border-color:var(--lime)}
+
+.projects-bg{background:var(--ink);color:var(--white);border-radius:24px;padding:64px 32px;margin:0 16px}@media(min-width:768px){.projects-bg{padding:100px 64px;margin:0 32px}}.projects-bg .section-label{color:var(--muted-light)}.projects-bg h2{color:var(--white)}.projects-header{display:flex;flex-direction:column;gap:16px;margin-bottom:64px}@media(min-width:768px){.projects-header{flex-direction:row;justify-content:space-between;align-items:flex-end}}.section-note{font-size:15px;color:var(--muted-light);font-weight:500;padding-bottom:8px}
+
+.project-grid{display:grid;grid-template-columns:1fr;gap:24px}@media(min-width:768px){.project-grid{grid-template-columns:repeat(3,1fr);gap:32px}}.project{background:var(--ink-light);border:1px solid var(--line-dark);border-radius:16px;padding:32px;position:relative;transition:transform .3s,border-color .3s;display:flex;flex-direction:column;height:100%}.project:hover{transform:translateY(-4px);border-color:var(--lime)}.project-number{font-family:Manrope,sans-serif;font-size:32px;font-weight:800;color:var(--line-dark);position:absolute;top:24px;right:24px;line-height:1}.project-art{height:160px;display:flex;align-items:center;justify-content:center;margin:0 -32px 32px;border-bottom:1px solid var(--line-dark);background:rgba(255,255,255,0.02);font-family:monospace;font-size:64px;color:var(--lime);opacity:0.7}.draft-label{font-size:11px;font-weight:700;letter-spacing:.1em;color:var(--muted-light);background:var(--ink);padding:4px 10px;border-radius:4px;display:inline-block;margin-bottom:16px}.project h3{font-size:24px;color:var(--white);margin-bottom:12px}.project p{font-size:15px;color:var(--muted-light);line-height:1.6;margin-bottom:0;flex-grow:1}
+
+.career{display:grid;grid-template-columns:1fr;gap:48px}@media(min-width:900px){.career{grid-template-columns:1fr 1.5fr;gap:80px}}.timeline{position:relative}.timeline::before{content:'';position:absolute;top:0;bottom:0;left:11px;width:2px;background:var(--line)}@media(min-width:600px){.timeline::before{left:140px}}.timeline-label{font-size:14px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--ink);margin:32px 0 24px;padding-left:40px;position:relative}@media(min-width:600px){.timeline-label{padding-left:170px}}.timeline-label:first-child{margin-top:0}.timeline-label::before{content:'';position:absolute;left:7px;top:50%;transform:translateY(-50%);width:10px;height:10px;background:var(--lime);border-radius:50%}@media(min-width:600px){.timeline-label::before{left:136px}}.timeline-item{display:flex;flex-direction:column;gap:8px;padding-left:40px;margin-bottom:32px;position:relative}@media(min-width:600px){.timeline-item{flex-direction:row;gap:32px;padding-left:0}}.timeline-item::after{content:'';position:absolute;left:9px;top:6px;width:6px;height:6px;background:var(--muted);border-radius:50%;border:2px solid var(--paper)}@media(min-width:600px){.timeline-item::after{left:138px}}.date{font-size:14px;font-weight:600;color:var(--muted);min-width:140px;padding-top:2px}.timeline-item h3{font-size:18px;font-weight:700;color:var(--ink);margin-bottom:4px}.timeline-item p{font-size:15px;color:var(--muted)}
+
+.contact{text-align:center;padding:120px 0}.contact .section-label{justify-content:center;margin-bottom:24px}.contact .section-label::before{display:none}.contact h2{font-size:clamp(40px,5vw,64px);margin-bottom:24px}.contact p{font-size:18px;color:var(--muted);max-width:600px;margin:0 auto 48px}.email{display:inline-flex;align-items:center;gap:16px;font-family:Manrope,sans-serif;font-size:clamp(20px,3vw,36px);font-weight:800;color:var(--ink);padding:20px 40px;border-radius:100px;background:var(--white);border:2px solid var(--line);transition:border-color .3s,transform .3s}.email:hover{border-color:var(--lime);transform:translateY(-4px)}.email span{color:var(--lime);font-size:0.8em}
+
+footer{display:flex;flex-direction:column;align-items:center;gap:16px;padding:32px 0;border-top:1px solid var(--line);color:var(--muted);font-size:14px;font-weight:500}@media(min-width:600px){footer{flex-direction:row;justify-content:space-between}}.skip{position:absolute;top:-100px;left:16px;padding:12px 20px;background:var(--ink);color:var(--white);border-radius:8px;z-index:50;font-weight:600}.skip:focus{top:16px}
+
+@media(max-width:767px){nav{display:none}/* Simplistic mobile nav approach for baseline preservation, would normally use a hamburger here but keeping structure intact */.nav{flex-wrap:wrap;gap:16px}nav{display:flex;width:100%;justify-content:space-between;overflow-x:auto;padding-bottom:8px;gap:16px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;transform:none!important}}
+</style>
 </head>
 <body>
-<a class="skip" href="#main">Zum Inhalt</a>
-<header class="nav wrap"><a class="brand" href="#">Benjamin Gangol<span class="brand-dot">.</span></a><nav aria-label="Hauptnavigation"><a href="#profil">Über mich</a><a href="#projekte">Projekte</a><a href="#werdegang">Werdegang</a><a class="nav-contact" href="mailto:benjamin.gangol@gmail.com">Kontakt <span aria-hidden="true">↗</span></a></nav></header>
+<div id="portfolio-root">
+<a class="skip" href="#main" id="skip-link">Zum Inhalt</a>
+<div class="wrap">
+<header class="nav" id="site-header">
+  <a class="brand" href="#" id="nav-brand">Benjamin Gangol<span class="brand-dot">.</span></a>
+  <nav aria-label="Hauptnavigation" id="main-nav">
+    <a href="#profil" id="nav-profil">Über mich</a>
+    <a href="#projekte" id="nav-projekte">Projekte</a>
+    <a href="#werdegang" id="nav-werdegang">Werdegang</a>
+    <a class="nav-contact" href="mailto:benjamin.gangol@gmail.com" id="nav-contact">
+      Kontakt <span aria-hidden="true">↗</span>
+    </a>
+  </nav>
+</header>
+</div>
+
 <main id="main">
-<section class="hero wrap" aria-labelledby="hero-title">
-<div class="hero-copy"><div class="eyebrow">PORTFOLIO / SOFTWAREENTWICKLUNG</div><h1 id="hero-title">Technik verstehen.<br><span>Software gestalten.</span></h1><p class="intro">Ich bin Benjamin. Informatikstudent an der TU Wien und begeisterter Entwickler mit einem Hintergrund in Elektronik.</p><div class="hero-actions"><a class="button" href="#projekte">Meine Projekte ansehen <span aria-hidden="true">↗</span></a><a class="text-link" href="mailto:benjamin.gangol@gmail.com">Kontakt aufnehmen</a></div><div class="hero-meta"><span>Wien & Oberwart, Österreich</span><span>Informatik · TU Wien</span></div></div>
-<aside class="profile-card" aria-label="Kurzprofil"><div class="card-top"><span>ENTWICKLERPROFIL</span><span>01 / BG</span></div><div class="monogram" aria-hidden="true">b<span>g</span><i>_</i></div><div class="card-name">Benjamin Gangol</div><div class="card-role">Informatikstudent & Entwickler</div><div class="card-bottom"><span>Webentwicklung</span><span>Software</span><span>Elektronik</span></div></aside>
+<div class="hero-wrapper">
+  <section class="hero-inset" aria-labelledby="hero-title" id="hero-section">
+    <div class="hero-grid-bg"></div>
+    <div class="hero-content">
+      <div class="hero-copy">
+        <div class="eyebrow">PORTFOLIO / SOFTWAREENTWICKLUNG</div>
+        <h1 id="hero-title">Hi, ich bin Benjamin.<br><span>Informatikstudent &amp; Softwareentwickler.</span></h1>
+        <p class="intro">Ich bin Benjamin. Informatikstudent an der TU Wien und begeisterter Entwickler mit einem Hintergrund in Elektronik.</p>
+        <div class="hero-actions">
+          <a class="button" href="#projekte" id="hero-btn-projekte">
+            Meine Projekte ansehen <span aria-hidden="true">↗</span>
+          </a>
+          <a class="text-link-white" href="mailto:benjamin.gangol@gmail.com" id="hero-link-contact">
+            Kontakt aufnehmen
+          </a>
+        </div>
+        <div class="hero-meta">
+          <span>Wien &amp; Oberwart, Österreich</span>
+          <span>Informatik · TU Wien</span>
+        </div>
+      </div>
+      <aside class="portrait-card" aria-label="Kurzprofil">
+        <img src="https://vgbujcuwptvheqijyjbe.supabase.co/storage/v1/object/public/hmac-uploads/projects/e3d637bf-e406-4cad-9c6c-013d83131736/content-assets/benjamin-portrait/benjamin-portrait.jpg" alt="Benjamin Gangol Portrait" class="portrait-img" width="240" height="240">
+        <div class="portrait-details">
+          <div class="card-name">Benjamin Gangol</div>
+          <div class="card-role">Informatikstudent &amp; Entwickler</div>
+          <div class="card-tags">
+            <span>Webentwicklung</span>
+            <span>Software</span>
+            <span>Elektronik</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+</div>
+
+<section id="profil" class="section wrap profile">
+  <div>
+    <div class="section-label">01 — ÜBER MICH</div>
+    <h2>Neugier als Antrieb.<br>Technik als Fundament.</h2>
+  </div>
+  <div>
+    <p>Meine Begeisterung für Technik hat mich zum Programmieren gebracht. Kenntnisse in der Webentwicklung habe ich mir selbst angeeignet. Heute vertiefe ich mein Wissen im Informatikstudium an der Technischen Universität Wien.</p>
+    <p>Aus meiner Ausbildung an der HTL Pinkafeld bringe ich einen Hintergrund in Elektronik mit. Ich lerne schnell, arbeite gerne im Team und gehe neue Aufgaben zielstrebig an.</p>
+    <div class="skills-container">
+      <div class="skills-title">Fähigkeiten &amp; Schwerpunkte</div>
+      <div class="skills" aria-label="Fähigkeiten">
+        <span>Webentwicklung</span>
+        <span>Softwareentwicklung</span>
+        <span>Elektronik</span>
+        <span>Teamarbeit</span>
+      </div>
+    </div>
+  </div>
 </section>
-<section id="profil" class="section wrap profile"><div class="section-label">01 — ÜBER MICH</div><div><h2>Neugier als Antrieb.<br>Technik als Fundament.</h2><p>Meine Begeisterung für Technik hat mich zum Programmieren gebracht. Kenntnisse in der Webentwicklung habe ich mir selbst angeeignet. Heute vertiefe ich mein Wissen im Informatikstudium an der Technischen Universität Wien.</p><p>Aus meiner Ausbildung an der HTL Pinkafeld bringe ich einen Hintergrund in Elektronik mit. Ich lerne schnell, arbeite gerne im Team und gehe neue Aufgaben zielstrebig an.</p><div class="skills" aria-label="Fähigkeiten"><span>Webentwicklung</span><span>Softwareentwicklung</span><span>Elektronik</span><span>Teamarbeit</span></div></div></section>
-<section id="projekte" class="section projects"><div class="wrap"><div class="section-heading"><div><div class="section-label">02 — PROJEKTE</div><h2>Was ich entwickle.</h2></div><span class="section-note">Einblicke in meine Arbeit</span></div><div class="project-grid" id="project-list"><article class="project"><span class="project-number">01</span><div class="project-art" aria-hidden="true">&lt;/&gt;</div><span class="draft-label">PROJEKTDETAILS FOLGEN</span><h3>Projekt 01</h3><p>Beschreibung, Technologien und Projektlink werden ergänzt.</p></article><article class="project"><span class="project-number">02</span><div class="project-art" aria-hidden="true">{ }</div><span class="draft-label">PROJEKTDETAILS FOLGEN</span><h3>Projekt 02</h3><p>Beschreibung, Technologien und Projektlink werden ergänzt.</p></article><article class="project"><span class="project-number">03</span><div class="project-art" aria-hidden="true">[ ]</div><span class="draft-label">PROJEKTDETAILS FOLGEN</span><h3>Projekt 03</h3><p>Beschreibung, Technologien und Projektlink werden ergänzt.</p></article></div></div></section>
-<section id="werdegang" class="section wrap career"><div><div class="section-label">03 — WERDEGANG</div><h2>Mein Weg<br>in die Entwicklung.</h2></div><div class="timeline"><h3 class="timeline-label">Ausbildung</h3><article class="timeline-item"><div class="date">2025 — heute</div><div><h3>Technische Universität Wien</h3><p>Studium der Informatik</p></div></article><article class="timeline-item"><div class="date">2019 — 2024</div><div><h3>HTL Pinkafeld</h3><p>Elektronik · Abschluss mit Matura</p></div></article><h3 class="timeline-label experience">Praktische Erfahrung</h3><article class="timeline-item"><div class="date">August 2022</div><div><h3>Versicherungsbüro Gangol</h3><p>Ferialpraktikum · Sekretariat</p></div></article><article class="timeline-item"><div class="date">Juli 2020</div><div><h3>MD Media plus</h3><p>Ferialpraktikum · Film- und Videoüberspielungen</p></div></article></div></section>
-<section id="kontakt" class="contact"><div class="wrap contact-inner"><div class="section-label">04 — KONTAKT</div><h2>Lernen wir uns kennen.</h2><p>Sie suchen Verstärkung in der Softwareentwicklung?<br>Ich freue mich auf ein Gespräch.</p><a class="email" href="mailto:benjamin.gangol@gmail.com">benjamin.gangol@gmail.com <span aria-hidden="true">↗</span></a></div></section>
-</main><footer class="wrap"><span>© <span id="year">2026</span> Benjamin Gangol</span><a href="#">Zurück nach oben ↑</a></footer>
-</body></html>
+
+<div class="projects-bg">
+  <section id="projekte" class="projects-section">
+    <div class="projects-header">
+      <div>
+        <div class="section-label">02 — PROJEKTE</div>
+        <h2>Was ich entwickle.</h2>
+      </div>
+      <span class="section-note">Einblicke in meine Arbeit</span>
+    </div>
+    <div class="project-grid" id="project-list">
+      <article class="project">
+        <span class="project-number">01</span>
+        <div class="project-art" aria-hidden="true">&lt;/&gt;</div>
+        <div>
+          <span class="draft-label">PROJEKTDETAILS FOLGEN</span>
+          <h3>Projekt 01</h3>
+          <p>Beschreibung, Technologien und Projektlink werden ergänzt.</p>
+        </div>
+      </article>
+      <article class="project">
+        <span class="project-number">02</span>
+        <div class="project-art" aria-hidden="true">{ }</div>
+        <div>
+          <span class="draft-label">PROJEKTDETAILS FOLGEN</span>
+          <h3>Projekt 02</h3>
+          <p>Beschreibung, Technologien und Projektlink werden ergänzt.</p>
+        </div>
+      </article>
+      <article class="project">
+        <span class="project-number">03</span>
+        <div class="project-art" aria-hidden="true">[ ]</div>
+        <div>
+          <span class="draft-label">PROJEKTDETAILS FOLGEN</span>
+          <h3>Projekt 03</h3>
+          <p>Beschreibung, Technologien und Projektlink werden ergänzt.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+</div>
+
+<section id="werdegang" class="section wrap career">
+  <div>
+    <div class="section-label">03 — WERDEGANG</div>
+    <h2>Mein Weg<br>in die Entwicklung.</h2>
+  </div>
+  <div class="timeline">
+    <h3 class="timeline-label">Ausbildung</h3>
+    <article class="timeline-item">
+      <div class="date">2025 — heute</div>
+      <div>
+        <h3>Technische Universität Wien</h3>
+        <p>Studium der Informatik</p>
+      </div>
+    </article>
+    <article class="timeline-item">
+      <div class="date">2019 — 2024</div>
+      <div>
+        <h3>HTL Pinkafeld</h3>
+        <p>Elektronik · Abschluss mit Matura</p>
+      </div>
+    </article>
+    
+    <h3 class="timeline-label experience">Praktische Erfahrung</h3>
+    <article class="timeline-item">
+      <div class="date">August 2022</div>
+      <div>
+        <h3>Versicherungsbüro Gangol</h3>
+        <p>Ferialpraktikum · Sekretariat</p>
+      </div>
+    </article>
+    <article class="timeline-item">
+      <div class="date">Juli 2020</div>
+      <div>
+        <h3>MD Media plus</h3>
+        <p>Ferialpraktikum · Film- und Videoüberspielungen</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section id="kontakt" class="section wrap contact">
+  <div class="section-label">04 — KONTAKT</div>
+  <h2>Lernen wir uns kennen.</h2>
+  <p>Sie suchen Verstärkung in der Softwareentwicklung? Ich freue mich auf ein Gespräch über mögliche Zusammenarbeit.</p>
+  <a class="email" href="mailto:benjamin.gangol@gmail.com" id="footer-email">
+    benjamin.gangol@gmail.com <span aria-hidden="true">↗</span>
+  </a>
+</section>
+</main>
+
+<footer class="wrap">
+  <span>© <span id="year">2024</span> Benjamin Gangol</span>
+  <a href="#" id="back-to-top">Zurück nach oben ↑</a>
+</footer>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</div>
+</body>
+</html>
