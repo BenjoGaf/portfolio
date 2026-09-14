@@ -34,4 +34,4 @@ Ein neues Pages-Projekt anlegen, GitHub verbinden und dieses Repository auswähl
 
 ## Inhaltlicher Stand
 
-Profil, Fähigkeiten, Werdegang und E-Mail-Kontakt sind vorhanden. Die drei Projektkarten enthalten noch Platzhalter und müssen vor Verwendung in Bewerbungen ergänzt werden.
+Profil, Fähigkeiten, Werdegang und E-Mail-Kontakt sind vorhanden. Die erste Projektkarte führt zu InfoExtractor, einer lokalen Dokumentensuche mit Ollama und einer aufgezeichneten Demo unter `dist/assets/infoextractor/`. Die beiden übrigen Projektkarten enthalten noch Platzhalter und müssen vor Verwendung in Bewerbungen ergänzt werden.
