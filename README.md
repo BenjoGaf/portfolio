@@ -19,6 +19,8 @@ python3 -m http.server 5173 --directory dist
 
 Anschließend `http://localhost:5173` im Browser öffnen.
 
+Die Projektseite ist unter `http://localhost:5173/infoextractor/` erreichbar. Sie liegt als `dist/infoextractor/index.html` vor und benötigt keinen dynamischen Router. Dieselbe Ordnerstruktur funktioniert auf Cloudflare Pages mit `dist` als Ausgabeverzeichnis. Relative Links verbinden die Seiten und Bilder. Die Datei `dist/_redirects` leitet auf Cloudflare alte Links zu `/infoextractor.html` auf `/infoextractor/` weiter.
+
 ## Cloudflare Pages mit GitHub
 
 Ein neues Pages-Projekt anlegen, GitHub verbinden und dieses Repository auswählen.
@@ -34,4 +36,4 @@ Ein neues Pages-Projekt anlegen, GitHub verbinden und dieses Repository auswähl
 
 ## Inhaltlicher Stand
 
-Profil, Fähigkeiten, Werdegang und E-Mail-Kontakt sind vorhanden. Die erste Projektkarte führt zur Projektvorstellung unter `dist/infoextractor.html`: eine kurze Beschreibung von InfoExtractor und vier vergrößerbare Screenshots des lokalen Ablaufs mit Ollama. Die beiden übrigen Projektkarten enthalten noch Platzhalter und müssen vor Verwendung in Bewerbungen ergänzt werden.
+Profil, Fähigkeiten, Werdegang und E-Mail-Kontakt sind vorhanden. Die erste Projektkarte führt zur Projektvorstellung unter `dist/infoextractor/index.html`: eine kurze Beschreibung von InfoExtractor und vier vergrößerbare Screenshots des lokalen Ablaufs mit Ollama. Das zweite Projekt unter `dist/getraenkeportionierer/index.html` stellt die HTL-Diplomarbeit anhand von drei Originalabbildungen aus der Dokumentation vor. Die dritte Projektkarte enthält noch einen Platzhalter.

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Getränkeportionierer — HTL-Diplomarbeit</title>
+<meta name="description" content="HTL-Diplomarbeit: Weboberfläche für einen Getränkeportionierer mit Next.js, MongoDB und Raspberry Pi.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2315212c'/%3E%3Ctext x='9' y='43' font-family='Arial' font-weight='bold' font-size='30' fill='%23bff16b'%3EBG%3C/text%3E%3C/svg%3E">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap');
+:root{--ink:#15212c;--muted:#596672;--lime:#bff16b;--paper:#f9faf8;--line:#dbe1e4}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.7 'DM Sans',sans-serif}a{color:inherit;text-underline-offset:5px}a:focus-visible{outline:3px solid #638b2d;outline-offset:6px}h1,h2,h3{font-family:Manrope,sans-serif;line-height:1.15;letter-spacing:-.035em;margin:0}p{margin:0}.wrap{width:min(1120px,calc(100% - 48px));margin:auto}.nav{min-height:96px;display:flex;justify-content:space-between;align-items:center;gap:24px}.brand{font:800 1.25rem Manrope,sans-serif;text-decoration:none}.back{font-weight:600;font-size:.9rem}.hero{margin:0 24px;background:var(--ink);color:white;border-radius:24px;padding:68px 0}.eyebrow{font-size:.875rem;letter-spacing:.13em;font-weight:700;text-transform:uppercase;color:var(--lime);margin-bottom:20px}h1{font-size:clamp(2.5rem,7vw,5.5rem);overflow-wrap:anywhere}.lead{font-size:clamp(1.2rem,2.3vw,1.6rem);max-width:740px;color:#cbd5e1;margin-top:24px}.actions{display:flex;flex-wrap:wrap;gap:24px;align-items:center;margin-top:32px}.button{display:inline-block;background:var(--lime);color:var(--ink);padding:12px 22px;border-radius:8px;text-decoration:none;font-weight:700}.tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:36px}.tags span{border:1px solid #425362;border-radius:6px;padding:5px 12px;font-size:.875rem;color:#d5dfe7}.overview{display:grid;grid-template-columns:1fr 1fr;gap:64px;padding:72px 0}.overview h2{font-size:1.6rem;margin-bottom:16px}.overview p{color:var(--muted)}.gallery{padding:20px 0 72px}.section-head{margin-bottom:40px}.section-head h2{font-size:clamp(2rem,4vw,3rem);margin-bottom:16px}.section-head p{color:var(--muted);max-width:740px}.step{margin:0 0 48px;background:white;border:1px solid var(--line);border-radius:16px;overflow:hidden}.step a{display:block;background:#eef0ec}.step img{display:block;width:100%;height:auto}.step a:hover{opacity:.93}.step figcaption{display:grid;grid-template-columns:48px 1fr;gap:18px;padding:28px 32px}.number{font:800 1.3rem Manrope,sans-serif;color:#536d34}.step h3{font-size:1.25rem;margin-bottom:8px}.step p{color:var(--muted);max-width:800px}.closing{padding:32px;background:var(--ink);color:white;border-radius:16px;display:flex;justify-content:space-between;align-items:center;gap:24px}.closing h2{font-size:1.5rem;margin-bottom:10px}.closing p{color:#cbd5e1}.closing .button{flex-shrink:0}footer{padding:28px 0;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:20px;color:var(--muted);font-size:.875rem}.skip{position:absolute;left:16px;top:-100px;padding:12px;background:var(--lime);z-index:10}.skip:focus{top:12px}@media(max-width:640px){.nav{flex-wrap:wrap;gap:8px;padding:20px 0}.hero{margin:0 12px;padding:44px 0}.hero .wrap{width:calc(100% - 32px)}.overview{grid-template-columns:1fr;gap:32px;padding:48px 0}.step figcaption{padding:22px 18px;grid-template-columns:30px 1fr;gap:12px}.closing{flex-direction:column;align-items:flex-start;padding:24px}footer{flex-direction:column;gap:8px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.step img{max-height:620px;object-fit:contain;background:white}.project-title{font-size:clamp(2rem,5.3vw,4.3rem);hyphens:auto}</style>
+</head>
+<body>
+<a class="skip" href="#main">Zum Inhalt</a>
+<header class="nav wrap"><a class="brand" href="../index.html">Benjamin Gangol.</a><a class="back" href="../index.html#projekte">← Zurück zum Portfolio</a></header>
+<main id="main">
+<section class="hero" aria-labelledby="title"><div class="wrap">
+<p class="eyebrow">Diplomarbeit · HTL Pinkafeld</p>
+<h1 class="project-title" id="title">Getränkeportionierer</h1>
+<p class="lead">Eine Weboberfläche, die Getränkeauswahl und Mischverhältnis mit der Steuerung eines Automaten verbindet.</p>
+<div class="actions"><a class="button" href="#einblicke">Projekt entdecken</a><a href="https://github.com/BenjoGaf/Getraenkeportionierer" target="_blank" rel="noopener">Repository auf GitHub ↗</a></div>
+<div class="tags" aria-label="Verwendete Technologien"><span>Next.js</span><span>Tailwind CSS</span><span>MongoDB · Mongoose</span><span>Python · UART</span><span>Raspberry Pi · Arduino</span></div>
+</div></section>
+<div class="wrap">
+<section class="overview" aria-label="Über die Diplomarbeit">
+<div><h2>Vom Browser zum Getränk</h2><p>Im Rahmen meiner Diplomarbeit an der HTL Pinkafeld entstand ein Getränkeportionierer mit fünf Pumpen. Über die Weboberfläche lassen sich zwei Getränke auswählen, ihr Mischverhältnis einstellen und der Mischvorgang starten. Voreinstellungen erleichtern die Auswahl beliebter Kombinationen.</p></div>
+<div><h2>Software trifft Elektronik</h2><p>Die Website und die MongoDB-Datenbank laufen auf einem Raspberry Pi im lokalen Netzwerk. Die Weboberfläche übermittelt den Mischauftrag über eine API an den Server. Ein Python-Programm gibt die Parameter über die serielle Schnittstelle an den Arduino weiter.</p></div>
+</section>
+<section class="gallery" id="einblicke" aria-labelledby="gallery-title">
+<div class="section-head"><h2 id="gallery-title">Einblicke in die Bedienung.</h2><p>Originalabbildungen aus der Dokumentation meiner Diplomarbeit. Per Klick lassen sich die Bilder in voller Größe öffnen.</p></div>
+<figure class="step"><a href="../assets/getraenkeportionierer/mischen.png" target="_blank" rel="noopener" aria-label="Getränkeauswahl in voller Größe öffnen"><img src="../assets/getraenkeportionierer/mischen.png" alt="Weboberfläche zum Mischen zweier Getränke mit Schieberegler und voreingestellten Kombinationen" width="1241" height="962" loading="lazy"></a><figcaption><span class="number">01</span><div><h3>Getränke und Mischverhältnis auswählen</h3><p>Ein Schieberegler legt das Verhältnis in Fünf-Prozent-Schritten fest. Die Auswahl bietet nur Getränke an, die einer Pumpe zugeordnet sind. Vor dem Start prüft die Anwendung die Eingaben.</p></div></figcaption></figure>
+<figure class="step"><a href="../assets/getraenkeportionierer/einstellungen.png" target="_blank" rel="noopener" aria-label="Einstellungen in voller Größe öffnen"><img src="../assets/getraenkeportionierer/einstellungen.png" alt="Einstellungen mit Pumpenreinigung, Eingabe neuer Getränke und Pumpenkonfiguration" width="581" height="576" loading="lazy"></a><figcaption><span class="number">02</span><div><h3>Den Automaten verwalten</h3><p>Die Einstellungen ermöglichen das Reinigen einer ausgewählten Pumpe und das Ergänzen neuer Getränke. Eine Prüfung verhindert doppelte Einträge in der Datenbank.</p></div></figcaption></figure>
+<figure class="step"><a href="../assets/getraenkeportionierer/pumpen.png" target="_blank" rel="noopener" aria-label="Pumpenkonfiguration in voller Größe öffnen"><img src="../assets/getraenkeportionierer/pumpen.png" alt="Konfiguration der fünf Pumpen mit Getränkezuordnung und gespeicherter Getränkeliste" width="1137" height="749" loading="lazy"></a><figcaption><span class="number">03</span><div><h3>Flaschen den Pumpen zuordnen</h3><p>Für jede der fünf Pumpen lässt sich das angeschlossene Getränk einstellen. MongoDB speichert die Zuordnung dauerhaft. Nicht mehr benötigte Getränke können aus der Liste entfernt werden.</p></div></figcaption></figure>
+<section class="overview" aria-label="Technische Umsetzung">
+<div><h2>Status und Abbruch</h2><p>Während des Mischens fragt die Oberfläche den Fortschritt im Sekundentakt beim Server ab. Ein laufender Mischvorgang kann abgebrochen werden; weitere Mischaufträge werden währenddessen abgewiesen.</p></div>
+<div><h2>Bedienung im lokalen Netzwerk</h2><p>Die Oberfläche passt sich an Smartphone und Computer an. Website und Datenbank starten automatisch mit dem Raspberry Pi. Die Bedienung erfolgt im selben Netzwerk wie der Automat.</p></div>
+</section>
+<div class="closing"><div><h2>Das Projekt auf GitHub</h2><p>Das zugehörige Repository zur Website des Getränkeportionierers.</p></div><a class="button" href="https://github.com/BenjoGaf/Getraenkeportionierer" target="_blank" rel="noopener">Repository öffnen ↗</a></div>
+</section>
+</div>
+</main>
+<footer class="wrap"><span>HTL-Diplomarbeit · Benjamin Gangol</span><a href="../index.html#projekte">Zurück zu meinen Projekten</a></footer>
+</body>
+</html>
