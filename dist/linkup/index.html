@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LinkUp — Ein Projekt von Benjamin Gangol</title>
+<meta name="description" content="LinkUp: Webplattform für kurzfristige Jobs, Inserate und Bewerbungen. Ein Softwareprojekt mit Next.js, TypeScript und Supabase.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2315212c'/%3E%3Ctext x='9' y='43' font-family='Arial' font-weight='bold' font-size='30' fill='%23bff16b'%3EBG%3C/text%3E%3C/svg%3E">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap');
+:root{--ink:#15212c;--muted:#596672;--lime:#bff16b;--paper:#f9faf8;--line:#dbe1e4}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.7 'DM Sans',sans-serif}a{color:inherit;text-underline-offset:5px}a:focus-visible{outline:3px solid #638b2d;outline-offset:6px}h1,h2,h3{font-family:Manrope,sans-serif;line-height:1.15;letter-spacing:-.035em;margin:0}p{margin:0}.wrap{width:min(1120px,calc(100% - 48px));margin:auto}.nav{min-height:96px;display:flex;justify-content:space-between;align-items:center;gap:24px}.brand{font:800 1.25rem Manrope,sans-serif;text-decoration:none}.back{font-weight:600;font-size:.9rem}.hero{margin:0 24px;background:var(--ink);color:white;border-radius:24px;padding:68px 0}.eyebrow{font-size:.875rem;letter-spacing:.13em;font-weight:700;text-transform:uppercase;color:var(--lime);margin-bottom:20px}h1{font-size:clamp(2.5rem,7vw,5.5rem);overflow-wrap:anywhere}.lead{font-size:clamp(1.2rem,2.3vw,1.6rem);max-width:740px;color:#cbd5e1;margin-top:24px}.actions{display:flex;flex-wrap:wrap;gap:24px;align-items:center;margin-top:32px}.button{display:inline-block;background:var(--lime);color:var(--ink);padding:12px 22px;border-radius:8px;text-decoration:none;font-weight:700}.tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:36px}.tags span{border:1px solid #425362;border-radius:6px;padding:5px 12px;font-size:.875rem;color:#d5dfe7}.overview{display:grid;grid-template-columns:1fr 1fr;gap:64px;padding:72px 0}.overview h2{font-size:1.6rem;margin-bottom:16px}.overview p{color:var(--muted)}.gallery{padding:20px 0 72px}.section-head{margin-bottom:40px}.section-head h2{font-size:clamp(2rem,4vw,3rem);margin-bottom:16px}.section-head p{color:var(--muted);max-width:740px}.step{margin:0 0 48px;background:white;border:1px solid var(--line);border-radius:16px;overflow:hidden}.step a{display:block;background:#eef0ec}.step img{display:block;width:100%;height:auto}.step a:hover{opacity:.93}.step figcaption{display:grid;grid-template-columns:48px 1fr;gap:18px;padding:28px 32px}.number{font:800 1.3rem Manrope,sans-serif;color:#536d34}.step h3{font-size:1.25rem;margin-bottom:8px}.step p{color:var(--muted);max-width:800px}.closing{padding:32px;background:var(--ink);color:white;border-radius:16px;display:flex;justify-content:space-between;align-items:center;gap:24px}.closing h2{font-size:1.5rem;margin-bottom:10px}.closing p{color:#cbd5e1}.closing .button{flex-shrink:0}footer{padding:28px 0;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:20px;color:var(--muted);font-size:.875rem}.skip{position:absolute;left:16px;top:-100px;padding:12px;background:var(--lime);z-index:10}.skip:focus{top:12px}@media(max-width:640px){.nav{flex-wrap:wrap;gap:8px;padding:20px 0}.hero{margin:0 12px;padding:44px 0}.hero .wrap{width:calc(100% - 32px)}.overview{grid-template-columns:1fr;gap:32px;padding:48px 0}.step figcaption{padding:22px 18px;grid-template-columns:30px 1fr;gap:12px}.closing{flex-direction:column;align-items:flex-start;padding:24px}footer{flex-direction:column;gap:8px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.feature{padding:30px 32px;margin-bottom:20px;background:white;border:1px solid var(--line);border-radius:16px}.feature h3{font-size:1.35rem;margin-bottom:12px}.feature p{color:var(--muted);max-width:850px}.feature .number{display:block;margin-bottom:14px}</style>
+</head>
+<body>
+<a class="skip" href="#main">Zum Inhalt</a>
+<header class="nav wrap"><a class="brand" href="../index.html">Benjamin Gangol.</a><a class="back" href="../index.html#projekte">← Zurück zum Portfolio</a></header>
+<main id="main">
+<section class="hero" aria-labelledby="title"><div class="wrap">
+<p class="eyebrow">Webentwicklung · Jobplattform</p>
+<h1 id="title">LinkUp</h1>
+<p class="lead">Kurzfristige Jobs ausschreiben, passende Angebote finden und Bewerbungen verwalten.</p>
+<div class="actions"><a class="button" href="#funktionen">Projekt entdecken</a><a href="https://github.com/BenjoGaf/LinkUp" target="_blank" rel="noopener">Quellcode auf GitHub ↗</a></div>
+<div class="tags" aria-label="Verwendete Technologien"><span>Next.js · React</span><span>TypeScript</span><span>Tailwind CSS</span><span>Supabase · PostgreSQL</span></div>
+</div></section>
+<div class="wrap">
+<section class="overview" aria-label="Über das Projekt">
+<div><h2>Die Idee dahinter</h2><p>Ob Aufbau, Lieferung, Assistenz oder Service: LinkUp verbindet Menschen, die kurzfristig Unterstützung suchen, mit Interessierten an einem Job. Auftraggeber erstellen Inserate, Interessierte sehen die offenen Angebote und können sich darauf bewerben.</p></div>
+<div><h2>Eine vollständige Webanwendung</h2><p>Das Projekt verbindet eine responsive Oberfläche mit serverseitigen API-Routen, Benutzeranmeldung und Datenbankzugriff. Das Repository trägt den Namen LinkUp; die aktuelle Benutzeroberfläche verwendet den Namen QuickShift.</p></div>
+</section>
+<section class="gallery" id="funktionen" aria-labelledby="features-title">
+<div class="section-head"><h2 id="features-title">Einblicke in LinkUp.</h2><p>Aufnahmen der lokalen Vorschau mit der aktuellen QuickShift-Oberfläche. Der Beispieljob ist fiktiv und wurde nicht veröffentlicht. Per Klick öffnen sich die Bilder in voller Größe.</p></div>
+<figure class="step"><a href="../assets/linkup/startseite.png" target="_blank" rel="noopener" aria-label="Startseite in voller Größe öffnen"><img src="../assets/linkup/startseite.png" alt="QuickShift-Startseite mit Einstieg zum Jobposten und zur Jobsuche; die lokale Vorschau enthält keine gespeicherten Inserate" width="1440" height="1085" loading="lazy"></a><figcaption><span class="number">01</span><div><h3>Der Einstieg zur Jobsuche</h3><p>Die Startseite führt direkt zum Erstellen eines Inserats oder zur Übersicht offener Jobs. Hier ist die lokale Vorschau ohne gespeicherte Inserate zu sehen.</p></div></figcaption></figure>
+<figure class="step"><a href="../assets/linkup/inserat.png" target="_blank" rel="noopener" aria-label="Inseratsformular und Vorschau in voller Größe öffnen"><img src="../assets/linkup/inserat.png" alt="Ausgefülltes Inseratsformular und Vorschau eines fiktiven Jobs für Event-Aufbau in Wien mit 18 Euro Stundenlohn" width="1440" height="1397" loading="lazy"></a><figcaption><span class="number">02</span><div><h3>Ein Inserat vorbereiten und prüfen</h3><p>Jobtitel, Ort, Bezahlung, Startzeit und Beschreibung werden im Formular erfasst. Vor dem endgültigen Speichern zeigt die Anwendung eine Vorschau der Angaben.</p></div></figcaption></figure>
+<figure class="step"><a href="../assets/linkup/anmeldung.png" target="_blank" rel="noopener" aria-label="Anmeldeseite in voller Größe öffnen"><img src="../assets/linkup/anmeldung.png" alt="QuickShift-Anmeldeseite mit der Schaltfläche Mit Google anmelden" width="1440" height="985" loading="lazy"></a><figcaption><span class="number">03</span><div><h3>Mit Google anmelden</h3><p>Die Anmeldung mit einem Google-Konto ist über Supabase Auth eingebunden. Nach dem Login führt die Anwendung zu den Kontoeinstellungen; das Konto verbindet eigene Inserate und Bewerbungen.</p></div></figcaption></figure>
+<div class="section-head"><h2>Von der Ausschreibung zur Bewerbung.</h2><p>Die zentralen Funktionen des Projekts im Überblick.</p></div>
+<article class="feature"><span class="number">01</span><h3>Jobs ausschreiben und entdecken</h3><p>Inserate enthalten Beschreibung, Ort, Startzeit und Bezahlung. Offene Angebote werden in einer Jobübersicht dargestellt. Neue Einträge werden serverseitig geprüft und in Supabase gespeichert.</p></article>
+<article class="feature"><span class="number">02</span><h3>Bewerbungen im Blick behalten</h3><p>Interessierte bewerben sich mit einer kurzen Vorstellung, einer Nachricht und ihrer Verfügbarkeit. Im eigenen Konto sehen sie ihre abgeschickten Bewerbungen sowie den Status „Offen“, „Angenommen“ oder „Abgelehnt“.</p></article>
+<article class="feature"><span class="number">03</span><h3>Profile und eigene Inserate verwalten</h3><p>Benutzerkonten verbinden persönliche Profile, eigene Jobposts und Bewerbungen. Dafür gibt es eigene Bereiche für Kontoeinstellungen, Inserate und eingegangene Bewerbungen.</p></article>
+<section class="overview" aria-label="Technische Umsetzung">
+<div><h2>Oberfläche und Server</h2><p>Next.js und React bilden die Grundlage der Oberfläche. TypeScript beschreibt die Datenstrukturen für Jobs, Bewerbungen und Profile. Tailwind CSS übernimmt die Gestaltung für unterschiedliche Bildschirmgrößen.</p></div>
+<div><h2>Anmeldung und Datenhaltung</h2><p>Supabase stellt die Benutzeranmeldung und die PostgreSQL-Datenbank bereit. Die Anwendung trennt API-Routen, Datenbankzugriffe und Validierung in eigene Module.</p></div>
+</section>
+<div class="closing"><div><h2>Ein Blick in den Code</h2><p>Der Quellcode von LinkUp ist auf GitHub verfügbar.</p></div><a class="button" href="https://github.com/BenjoGaf/LinkUp" target="_blank" rel="noopener">GitHub öffnen ↗</a></div>
+</section>
+</div>
+</main>
+<footer class="wrap"><span>LinkUp · Benjamin Gangol</span><a href="../index.html#projekte">Zurück zu meinen Projekten</a></footer>
+</body>
+</html>
